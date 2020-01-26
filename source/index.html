@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Cat-energy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -52,7 +53,7 @@
       </ul>
     </section>
     <section class="advantages">
-      <h2 class="advantages__title headline">Как это работает</h2>
+      <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--healthy">
           <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -82,15 +83,30 @@
         <span class="measure__desc">затрачено времени</span>
       </div>
       <p class="exemple__cost">Затраты на питание: 15 000 руб.</p>
-      <div class="exemple__image">
-
+      <div class="exemple__image  slider">
+        <ul class="slider__slides">
+          <li class="slider__slide">
+            <img class="slider__img" scr="" alt="Кот до программы похудения">
+          </li>
+          <li class="slider__slide">
+            <img class="slider__img" scr="" alt="Кот после программы похудения">
+          </li>
+        </ul>
+        <div class="slider__controls">
+          <button class="slider__control slider__control--was" type="button">Было</button>
+          <button class="slider__control slider__control--now" type="button">Стало</button>
+        </div>
       </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Наш адрес</h2>
-      <p class="map__slogan">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="map__alt">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="map__img" src="" alt="Карта с адресом">
+      <div class="map__info">
+        <p class="map__slogan">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="map__alt">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="map__container">
+
+      </div>
     </section>
   </main>
   <footer class="page-footer">

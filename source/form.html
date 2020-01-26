@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Cat-energy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -30,22 +31,22 @@
   </header>
   <main>
     <section class="profile">
-      <h1 class="profile__headline headline">Подбор программы</h1>
+      <h1 class="profile__headline">Подбор программы</h1>
       <p class="profile__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="profile__form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="profile__section section">
           <legend class="visually-hidden">Основные данные о коте</legend>
           <div class="section__line">
             <label class="section__label" for="cat-name">Имя:*</label>
-            <input class="section__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
+            <input class="section__input" type="text" id="cat-name" name="cat-name" value="Барсик" required>
           </div>
           <div class="section__line">
             <label class="section__label" for="cat-weight">Вес (кг):*</label>
-            <input class="section__input" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+            <input class="section__input" type="number" id="cat-weight" name="cat-weight" value="7" required>
           </div>
           <div class="section__line">
             <label class="section__label" for="cat-age">Возраст (лет):</label>
-            <input class="section__input" type="number" id="cat-age" name="cat-age" placeholder="7">
+            <input class="section__input" type="number" id="cat-age" name="cat-age" value="7">
           </div>
         </fieldset>
         <fieldset class="profile__section section">
@@ -69,17 +70,17 @@
           <legend class="section__title">Контактные данные (владельца кота)</legend>
           <div class="section__line">
             <label class="section__label" for="owner-email">E-mail:*</label>
-            <input class="section__input" type="email" id="owner-email" name="owner-email"
-              placeholder="kuklachev@gmail.com" required>
+            <input class="section__input" type="email" id="owner-email" name="owner-email" value="kuklachev@gmail.com"
+              required>
           </div>
           <div class="section__line">
             <label class="section__label" for="owner-phone">Телефон:*</label>
-            <input class="section__input" type="tel" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90"
+            <input class="section__input" type="tel" id="owner-phone" name="owner-phone" value="8 (960) 900-60-90"
               required>
           </div>
         </fieldset>
         <fieldset class="profile__section section">
-          <legend class="section__title" for="comment">Комментарий</legend>
+          <label class="section__title" for="comment">Комментарий</label>
           <textarea class="section__textarea" id="comment">
               Расскажите обо всех повадках кота
           </textarea>
@@ -106,14 +107,18 @@
           </ul>
         </fieldset>
         <button class="button profile__button" type="submit">Отправить заявку</button>
-        <p class="section__note">* — Обязательные поля</p>
       </form>
+      <p class="profile__note">* — Обязательные поля</p>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Наш адрес</h2>
-      <p class="map__slogan">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="map__alt">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="map__img" src="" alt="Карта с адресом">
+      <div class="map__info">
+        <p class="map__slogan">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="map__alt">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="map__container">
+
+      </div>
     </section>
   </main>
   <footer class="page-footer">
