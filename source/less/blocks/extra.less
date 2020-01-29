@@ -1,5 +1,40 @@
+.extra {
+  .container-mobile();
+}
+
+.extra__offers {
+  display: flex;
+  flex-direction: column;
+}
+
+.extra__list {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+}
+
 .extra__title {
   .headline;
   font-size: 24px;
   line-height: 24px;
+}
+
+@media (min-width: @tablet) {
+  .extra {
+    .container-tablet();
+  }
+}
+
+@media (min-width: @desktop) {
+  .extra {
+    .container-desktop();
+  }
+  .extra__offers {
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+  .extra__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

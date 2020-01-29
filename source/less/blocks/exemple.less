@@ -2,6 +2,13 @@
   background-color: @bg-grey;
 }
 
+.exemple__wrapper {
+  .container-mobile();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .exemple__title {
   .headline;
   font-size: 36px;
@@ -13,4 +20,26 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+}
+
+@media (min-width: @tablet) {
+  .exemple__wrapper {
+    .container-tablet();
+    /* background-color: @white;*/
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .exemple__title {
+    font-size: 60px;
+  }
+  .exemple__cost {
+    font-size: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop) {
+  .exemple__wrapper {
+    .container-desktop();
+  }
 }

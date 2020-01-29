@@ -6,4 +6,23 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  min-height: 289px;
+
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet) {
+  .promo {
+    flex-direction: row;
+    min-height: 200px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo {
+    flex-direction: column;
+    min-width: 245px;
+  }
 }

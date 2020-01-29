@@ -1,3 +1,7 @@
+.product-card {
+display: flex;
+flex-wrap: wrap;
+}
 
 .product-card__title {
   .headline-up;
@@ -17,4 +21,19 @@
 .product-card__all {
   background-color: @bg-grey;
   color: @text-grey;
+}
+
+@media (min-width: @tablet) {
+  .product-card {
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    width: 324px;
+    }
+}
+
+@media (min-width: @desktop) {
+  .product-card {
+    width: 245px;
+    }
 }

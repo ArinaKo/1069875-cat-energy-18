@@ -1,1 +1,16 @@
-/* comment */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet) {
+  .page-header {
+    .container-tablet();
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-header {
+    .container-desktop();
+  }
+}

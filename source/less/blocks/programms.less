@@ -1,5 +1,20 @@
-.proramms {
+.programms {
+  .container-mobile();
+}
+
+.programms__list {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.programms__item {
   background-color: @bg-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .programms__title {
@@ -12,4 +27,27 @@
   .headline-up;
   font-size: 16px;
   line-height: 16px;
+}
+
+@media (min-width: @tablet) {
+  .programms {
+    .container-tablet();
+  }
+  .programms__title {
+    font-size: 36px;
+  }
+
+  .programms__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .programms {
+    .container-desktop();
+  }
+  .programms__list {
+    flex-direction: row;
+  }
 }
