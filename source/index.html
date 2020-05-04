@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat-energy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +13,7 @@
     <a class="page-header__logo logo">
       <img class="logo__img" src="" alt="Логотип Cat-energy">
     </a>
-    <nav class="main-nav">
+    <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -31,9 +32,11 @@
   </header>
   <main>
     <div class="intro">
-      <h1 class="intro__headline">Функциональное питание для котов</h1>
-      <p class="intro__slogan">Занятся собой? Займись котом!</p>
-      <a class="intro__search button" href="form.html">Подобрать программу</a>
+      <div class="intro__wrapper">
+        <h1 class="intro__headline">Функциональное питание для котов</h1>
+        <p class="intro__slogan">Занятся собой? Займись котом!</p>
+        <a class="intro__search button" href="form.html">Подобрать программу</a>
+      </div>
     </div>
     <section class="programms">
       <h2 class="visually-hidden">Основные программы</h2>
@@ -70,31 +73,36 @@
       </ul>
     </section>
     <section class="exemple">
-      <h2 class="exemple__title">Живой пример</h2>
-      <p class="exemple__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в день.</p>
-      <div class="exemple__measure measure">
-        <b class="measure__result">5 кг</b>
-        <span class="measure__desc">снижение веса</span>
-      </div>
-      <div class="exemple__measure measure">
-        <b class="measure__result">60 дней</b>
-        <span class="measure__desc">затрачено времени</span>
-      </div>
-      <p class="exemple__cost">Затраты на питание: 15 000 руб.</p>
-      <div class="exemple__image  slider">
-        <ul class="slider__slides">
-          <li class="slider__slide">
-            <img class="slider__img" scr="" alt="Кот до программы похудения">
-          </li>
-          <li class="slider__slide">
-            <img class="slider__img" scr="" alt="Кот после программы похудения">
-          </li>
-        </ul>
-        <div class="slider__controls">
-          <button class="slider__control slider__control--was" type="button">Было</button>
-          <button class="slider__control slider__control--now" type="button">Стало</button>
+      <div class="exemple__wrapper">
+        <h2 class="exemple__title">Живой пример</h2>
+        <p class="exemple__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+          часов
+          в день.</p>
+        <div class="exemple__measures measure">
+          <div class="measure__item">
+            <b class="measure__result">5 кг</b>
+            <span class="measure__desc">снижение веса</span>
+          </div>
+          <div class="measure__item">
+            <b class="measure__result">60 дней</b>
+            <span class="measure__desc">затрачено времени</span>
+          </div>
+        </div>
+        <p class="exemple__cost">Затраты на питание: 15 000 руб.</p>
+        <div class="exemple__image  slider">
+          <ul class="slider__slides">
+            <li class="slider__slide">
+              <img class="slider__img" scr="" alt="Кот до программы похудения">
+            </li>
+            <li class="slider__slide">
+              <img class="slider__img" scr="" alt="Кот после программы похудения">
+            </li>
+          </ul>
+          <div class="slider__controls">
+            <button class="slider__control slider__control--was" type="button">Было</button>
+            <button class="slider__control slider__control--now" type="button">Стало</button>
+          </div>
         </div>
       </div>
     </section>
@@ -110,17 +118,19 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo logo">
-      <p class="logo__img">Cat energy</p>
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item"><a class="social__link social__link--vk" href="#">Мы во вконтакте</a></li>
-        <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в инстаграме</a></li>
-        <li class="social__item"><a class="social__link social__link--fb" href="#">Мы в фейсбуке</a></li>
-      </ul>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo logo">
+        <p class="logo__img">Cat energy</p>
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--vk" href="#">Мы во вконтакте</a></li>
+          <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в инстаграме</a></li>
+          <li class="social__item"><a class="social__link social__link--fb" href="#">Мы в фейсбуке</a></li>
+        </ul>
+      </div>
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
-    <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </footer>
 </body>
 

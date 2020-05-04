@@ -1,5 +1,38 @@
+.advantages {
+  .container-mobile();
+}
+
+.advantages__list {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .advantages__title {
   .headline;
   font-size: 36px;
   line-height: 60px;
+}
+
+@media (min-width: @tablet) {
+  .advantages {
+    .container-tablet();
+  }
+
+  .advantages__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .advantages {
+    .container-desktop();
+  }
 }

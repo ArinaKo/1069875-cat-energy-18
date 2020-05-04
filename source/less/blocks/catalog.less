@@ -1,5 +1,38 @@
+.catalog {
+  .container-mobile();
+}
+
+.catalog__list {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog__headline {
   .headline;
   font-size: 36px;
   line-height: 60px;
+}
+
+@media (min-width: @tablet) {
+  .catalog {
+    .container-tablet();
+  }
+
+  .catalog__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog__headline {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .catalog {
+    .container-desktop();
+  }
 }

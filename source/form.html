@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat-energy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -51,18 +52,18 @@
         </fieldset>
         <fieldset class="profile__section section">
           <legend class="visually-hidden">Выбор программы</legend>
-          <ul class="section__list">
-            <li class="section__item">
-              <input class="section__radio" type="radio" id="slim-programm" name="programm" value="slim" checked>
-              <label class="section__label" for="slim-programm">Похудение</label>
+          <ul class="section__list radio-list">
+            <li class="radio-list__item">
+              <input class="radio-list__field" type="radio" id="slim-programm" name="programm" value="slim" checked>
+              <label class="radio-list__label" for="slim-programm">Похудение</label>
             </li>
-            <li class="section__item">
-              <input class="section__radio" type="radio" id="pro-programm" name="programm" value="pro">
-              <label class="section__label" for="pro-programm">Набор массы</label>
+            <li class="radio-list__item">
+              <input class="radio-list__field" type="radio" id="pro-programm" name="programm" value="pro">
+              <label class="radio-list__label" for="pro-programm">Набор массы</label>
             </li>
-            <li class="section__item">
-              <input class="section__radio" type="radio" id="idk-programm" name="programm" value="idk">
-              <label class="section__label" for="idk-programm">Не знаю (Нужен ваш совет)</label>
+            <li class="radio-list__item">
+              <input class="radio-list__field" type="radio" id="idk-programm" name="programm" value="idk">
+              <label class="radio-list__label" for="idk-programm">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
@@ -87,22 +88,22 @@
         </fieldset>
         <fieldset class="profile__section section">
           <legend class="section__title">Дополнительно</legend>
-          <ul class="section__list">
-            <li class="section__item">
-              <input class="section__checkbox" type="checkbox" id="extra-sweetener" name="extra-sweetener" checked>
-              <label class="section__label" for="extra-sweetener">Сахарозаменитель</label>
+          <ul class="section__list checkbox-list">
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__field" type="checkbox" id="extra-sweetener" name="extra-sweetener" checked>
+              <label class="checkbox-list__label" for="extra-sweetener">Сахарозаменитель</label>
             </li>
-            <li class="section__item">
-              <input class="section__checkbox" type="checkbox" id="extra-water" name="extra-water">
-              <label class="section__label" for="extra-water">Питьевая вода</label>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__field" type="checkbox" id="extra-water" name="extra-water">
+              <label class="checkbox-list__label" for="extra-water">Питьевая вода</label>
             </li>
-            <li class="section__item">
-              <input class="section__checkbox" type="checkbox" id="extra-milk" name="extra-milk">
-              <label class="section__label" for="extra-milk">Молоко</label>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__field" type="checkbox" id="extra-milk" name="extra-milk">
+              <label class="checkbox-list__label" for="extra-milk">Молоко</label>
             </li>
-            <li class="section__item">
-              <input class="section__checkbox" type="checkbox" id="extra-vitamins" name="extra-vitamins">
-              <label class="section__label" for="extra-vitamins">Витамины</label>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__field" type="checkbox" id="extra-vitamins" name="extra-vitamins">
+              <label class="checkbox-list__label" for="extra-vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -122,17 +123,19 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo logo" href="index.html">
-      <p class="logo__img">Cat energy</p>
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item"><a class="social__link social__link--vk" href="#">Мы во вконтакте</a></li>
-        <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в инстаграме</a></li>
-        <li class="social__item"><a class="social__link social__link--fb" href="#">Мы в фейсбуке</a></li>
-      </ul>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo logo" href="index.html">
+        <p class="logo__img">Cat energy</p>
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--vk" href="#">Мы во вконтакте</a></li>
+          <li class="social__item"><a class="social__link social__link--instagram" href="#">Мы в инстаграме</a></li>
+          <li class="social__item"><a class="social__link social__link--fb" href="#">Мы в фейсбуке</a></li>
+        </ul>
+      </div>
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
-    <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </footer>
 </body>
 

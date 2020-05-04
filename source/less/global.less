@@ -6,7 +6,7 @@ body {
   text-align: left;
   color: @text-grey;
 
-  background-color: white;
+  background-color: @white;
 }
 
 .visually-hidden {
@@ -19,4 +19,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+@media (min-width: @tablet) {
+  .body {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

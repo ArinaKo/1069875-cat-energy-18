@@ -1,0 +1,24 @@
+.checkbox-list {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.checkbox-list__label {
+  .headline-up;
+  font-size: 16px;
+  color: @form-black;
+}
+
+@media (min-width: @tablet) {
+  .checkbox-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .checkbox-list__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

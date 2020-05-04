@@ -1,9 +1,52 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  .container-mobile();
+}
+
 .profile__headline {
   .headline;
   font-size: 36px;
   line-height: 60px;
+  align-self: flex-start;
+}
+
+.profile__intro {
+  .headline-up();
+  align-self: flex-start;
+}
+
+.profile__form {
+  display: flex;
+  flex-direction: column;
 }
 
 .profile__note {
   line-height: 16px;
+  align-self: center;
+}
+
+@media (min-width: @tablet) {
+  .profile {
+    .container-tablet();
+  }
+
+  .profile__headline {
+    font-size: 60px;
+  }
+
+  .profile__intro {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .profile__button {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: @desktop) {
+  .profile {
+    .container-desktop();
+  }
 }

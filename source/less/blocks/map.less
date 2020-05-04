@@ -1,4 +1,6 @@
 .map__info {
+  .container-mobile();
+  display: flex;
   line-height: 20px;
   background-color: @white;
 }
@@ -6,4 +8,33 @@
 .map__slogan {
   .headline-up;
   font-size: 16px;
+}
+
+@media (min-width: @tablet) {
+  .map__info {
+    .container-tablet();
+  }
+
+  .map__slogan {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .map__alt {
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop) {
+  .map {
+    width: 100%;
+  }
+
+  .map__info {
+    width: 570px;
+  }
+
+  .map__alt {
+    text-align: left;
+  }
 }
