@@ -1,7 +1,7 @@
 .intro {
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-color: @green;
+  background-image: linear-gradient(to bottom, @green 305px, @white 305px);
+  position: relative;
+  margin-bottom: 22px;
 }
 
 .intro__wrapper {
@@ -9,31 +9,54 @@
   text-align: center;
   color: @white;
   .container-mobile();
+  padding-top: 28px;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 480px;
 }
 
+.intro__wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/index-can-mobile@1x.png");
+  width: 280px;
+  height: 271px;
+  top: 165px;
+  left: 50%;
+  margin-left: -140px;
+}
+
 .intro__headline {
   font-size: 36px;
   line-height: 36px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .intro__slogan {
   line-height: 14px;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.intro__search {
+  margin-top: auto;
 }
 
 @media (min-width: @tablet) {
   .intro {
     background-image: none;
-    background-color: @white;
     height: 865px;
   }
 
   .intro__wrapper {
     .container-tablet();
+    background-image: none;
     align-items: flex-start;
     color: @headline-black;
     text-align: left;

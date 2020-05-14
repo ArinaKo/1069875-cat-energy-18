@@ -1,5 +1,6 @@
 .programms {
   .container-mobile();
+  margin-bottom: 18px;
 }
 
 .programms__list {
@@ -15,18 +16,68 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+  padding: 0 20px;
+}
+
+.programms__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .programms__title {
   .headline-up;
   font-size: 24px;
   line-height: 37px;
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-bottom: 29px;
+}
+
+.programms__title::before,
+.programms__title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.programms__title::before {
+  border-radius: 50%;
+  background-color: @green;
+  top: 24px;
+  left: 22px;
+}
+
+.programms__title::after {
+  background-image: url("../../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  top: 21px;
+  left: 30px;
+}
+
+.programms__desc {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .programms__link {
   .headline-up;
   font-size: 16px;
   line-height: 16px;
+  padding: 22px 0;
+  position: relative;
+}
+
+.programms__link::after {
+  content: "";
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 12px;
+  position: absolute;
+  right: -37px;
+  top: 50%;
+  margin-top: -6px;
 }
 
 @media (min-width: @tablet) {
