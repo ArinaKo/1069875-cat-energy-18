@@ -18,41 +18,55 @@
   align-items: flex-start;
   position: relative;
   padding: 0 20px;
+  padding-top: 30px;
 }
 
 .programms__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.programms__title {
-  .headline-up;
-  font-size: 24px;
-  line-height: 37px;
-  margin-top: 30px;
-  margin-left: 70px;
-  margin-bottom: 29px;
-}
-
-.programms__title::before,
-.programms__title::after {
+.programms__item::before,
+.programms__item::after {
   content: "";
   position: absolute;
-  width: 50px;
-  height: 50px;
 }
 
-.programms__title::before {
+.programms__item::before {
   border-radius: 50%;
   background-color: @green;
+  width: 50px;
+  height: 50px;
   top: 24px;
   left: 22px;
 }
 
-.programms__title::after {
-  background-image: url("../../img/icon-cat-slim.svg");
+.programms__item::after {
   background-repeat: no-repeat;
-  top: 21px;
+}
+
+.programms__item--slim::after {
+  background-image: url("../../img/icon-cat-slim.svg");
+  width: 35px;
+  height: 50px;
+  top: 22px;
   left: 30px;
+}
+
+.programms__item--pro::after {
+  background-image: url("../../img/icon-cat-pro.svg");
+  width: 67px;
+  height: 30px;
+  top: 35px;
+  left: 13px;
+}
+
+.programms__title {
+  .headline-up;
+  font-size: 24px;
+  line-height: 37px;
+  margin: 0;
+  margin-left: 70px;
+  margin-bottom: 29px;
 }
 
 .programms__desc {
@@ -83,15 +97,65 @@
 @media (min-width: @tablet) {
   .programms {
     .container-tablet();
+    margin-bottom: 45px;
+  }
+
+  .programms__item {
+    padding-top: 76px;
+    padding-left: 53px;
+    padding-right: 275px;
+    padding-bottom: 40px;
+  }
+
+  .programms__item--pro {
+    padding-right: 312px;
+  }
+
+  .programms__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .programms__item::before {
+    width: 200px;
+    height: 200px;
+    right: 62px;
+    left: auto;
+    top: 92px;
+  }
+
+  .programms__item--slim::after {
+    width: 145px;
+    height: 195px;
+    right: 87px;
+    left: auto;
+    top: 79px;
+  }
+
+  .programms__item--pro::after {
+    width: 270px;
+    height: 112px;
+    right: 26px;
+    left: auto;
+    top: 135px;
   }
 
   .programms__title {
     font-size: 36px;
+    margin-left: 0;
+    margin-bottom: 26px;
+  }
+
+  .programms__desc {
+    margin-bottom: 33px;
   }
 
   .programms__link {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .programms__link::after {
+    right: -47px;
   }
 }
 

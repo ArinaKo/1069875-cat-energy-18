@@ -45,18 +45,38 @@
 @media (min-width: @tablet) {
   .exemple__wrapper {
     .container-tablet();
-    /* background-color: @white;*/
+    /* background-image: linear-gradient(to bottom, @white, @bg-grey); */
+    padding-top: 45px;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
   }
 
   .exemple__title {
     font-size: 60px;
+    margin-bottom: 64px;
+  }
+
+  .exemple__text {
+    margin-bottom: 52px;
+  }
+
+  .exemple__measures {
+    margin-bottom: 80px;
   }
 
   .exemple__cost {
     font-size: 20px;
     text-align: right;
+    position: absolute;
+    width: 190px;
+    right: 31px;
+    top: 300px;
+    line-height: 30px;
+  }
+
+  .exemple__image {
+    margin-bottom: 66px;
   }
 }
 

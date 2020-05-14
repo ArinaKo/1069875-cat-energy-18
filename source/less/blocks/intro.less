@@ -19,10 +19,12 @@
   height: 480px;
 }
 
-.intro__wrapper::before {
+.intro__wrapper::after {
   content: "";
   position: absolute;
   background-image: url("../../img/index-can-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
   width: 280px;
   height: 271px;
   top: 165px;
@@ -42,16 +44,12 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
-}
-
-.intro__search {
-  margin-top: auto;
+  margin-bottom: auto;
 }
 
 @media (min-width: @tablet) {
   .intro {
     background-image: none;
-    height: 865px;
   }
 
   .intro__wrapper {
@@ -60,16 +58,31 @@
     align-items: flex-start;
     color: @headline-black;
     text-align: left;
+    height: 828px;
+    padding: 0 117px;
+    padding-top: 40px;
+  }
+
+  .intro__wrapper::after {
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    height: 710px;
+    width: 610px;
+    margin-left: -305px;
+    top: 241px;
+    z-index: -2;
   }
 
   .intro__headline {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 41px;
   }
 
   .intro__slogan {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 48px;
+    padding-left: 1px;
   }
 }
 
