@@ -3,20 +3,21 @@
 }
 
 .exemple__wrapper {
-  .container-mobile();
-  padding-top: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  .container-mobile();
+  padding-top: 18px;
 }
 
 .exemple__title {
+  align-self: flex-start;
+  margin: 0;
+  margin-bottom: 23px;
+
   .headline;
   font-size: 36px;
   line-height: 60px;
-  margin: 0;
-  margin-bottom: 23px;
-  align-self: flex-start;
 }
 
 .exemple__text {
@@ -30,12 +31,13 @@
 }
 
 .exemple__cost {
+  margin: 0;
+  margin-bottom: 40px;
+
   .headline-up;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  margin: 0;
-  margin-bottom: 40px;
 }
 
 .exemple__image {
@@ -44,12 +46,13 @@
 
 @media (min-width: @tablet) {
   .exemple__wrapper {
-    .container-tablet();
-    /* background-image: linear-gradient(to bottom, @white, @bg-grey); */
-    padding-top: 45px;
+    position: relative;
+
     flex-direction: column;
     align-items: flex-start;
-    position: relative;
+    .container-tablet();
+    padding-top: 45px;
+    /* background-image: linear-gradient(to bottom, @white, @bg-grey); */
   }
 
   .exemple__title {
@@ -66,13 +69,15 @@
   }
 
   .exemple__cost {
-    font-size: 20px;
-    text-align: right;
     position: absolute;
-    width: 190px;
-    right: 31px;
     top: 300px;
+    right: 31px;
+
+    width: 190px;
+
+    font-size: 20px;
     line-height: 30px;
+    text-align: right;
   }
 
   .exemple__image {
@@ -83,5 +88,36 @@
 @media (min-width: @desktop) {
   .exemple__wrapper {
     .container-desktop();
+    padding-top: 26px;
+    padding-right: 810px;
+    padding-bottom: 30px;
+  }
+
+  .exemple__title {
+    margin-bottom: 146px;
+  }
+
+  .exemple__text {
+    margin-bottom: 68px;
+  }
+
+  .exemple__measures {
+    margin-bottom: 55px;
+  }
+
+  .exemple__cost {
+    position: relative;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    width: 330px;
+  }
+
+  .exemple__image {
+    position: absolute;
+
+    width: 300px;
+    right: 100px;
   }
 }

@@ -1,50 +1,57 @@
 .intro {
-  background-image: linear-gradient(to bottom, @green 305px, @white 305px);
   position: relative;
   margin-bottom: 22px;
+
+  background-image: linear-gradient(to bottom, @green 305px, @white 305px);
 }
 
 .intro__wrapper {
-  .headline();
-  text-align: center;
-  color: @white;
   .container-mobile();
-  padding-top: 28px;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 480px;
+  padding-top: 28px;
+
+  .headline();
+  text-align: center;
+  color: @white;
+
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .intro__wrapper::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/index-can-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position-x: center;
+  top: 166px;
+  left: 50%;
+
   width: 280px;
   height: 271px;
-  top: 165px;
-  left: 50%;
   margin-left: -140px;
+
+  background-image: url("../../img/index-can-mobile@1x.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
 }
 
 .intro__headline {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
-  margin: 0;
-  margin-bottom: 25px;
 }
 
 .intro__slogan {
-  line-height: 14px;
-  text-transform: uppercase;
   margin: 0;
   margin-bottom: auto;
+
+  line-height: 14px;
+  text-transform: uppercase;
 }
 
 @media (min-width: @tablet) {
@@ -54,47 +61,76 @@
 
   .intro__wrapper {
     .container-tablet();
-    background-image: none;
     align-items: flex-start;
-    color: @headline-black;
-    text-align: left;
+
     height: 828px;
     padding: 0 117px;
     padding-top: 40px;
+
+    text-align: left;
+    color: @headline-black;
+
+    background-image: none;
   }
 
   .intro__wrapper::after {
-    background-image: url("../../img/index-can-tablet@1x.jpg");
-    height: 710px;
-    width: 610px;
-    margin-left: -305px;
     top: 241px;
     z-index: -2;
+
+    height: 610px;
+    width: 710px;
+    margin-left: -356px;
+
+    background-image: url("../../img/index-can-tablet@1x.jpg");
   }
 
   .intro__headline {
+    margin-bottom: 41px;
+
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 41px;
   }
 
   .intro__slogan {
-    font-size: 20px;
-    line-height: 20px;
     margin-bottom: 48px;
     padding-left: 1px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: @desktop) {
   .intro {
     height: 696px;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
+    margin-bottom: 80px;
+
+    background-image: url("../../img/index-background-desktop@1x.jpg"),
+      linear-gradient(to right, @white 50%, @green-hvr 50%);
+    background-position: 100% 0, 0 0;
     background-repeat: no-repeat;
-    background-color: @green;
   }
 
   .intro__wrapper {
     .container-desktop();
+    padding-top: 222px;
+    padding-right: 600px;
+    padding-left: 110px;
+  }
+
+  .intro__wrapper::after {
+    top: 142px;
+    z-index: 3;
+
+    height: 499px;
+    width: 552px;
+    margin-left: -160px;
+
+    background-image: url("../../img/index-can-desktop@1x.png");
+  }
+
+  .intro__slogan {
+    margin-bottom: 53px;
+    padding-left: 0;
   }
 }
