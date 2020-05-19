@@ -1,14 +1,9 @@
 .promo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 
-  height: 290px;
-  box-sizing: border-box;
   padding: 0 50px;
-  padding-top: 65px;
-  padding-bottom: 43px;
+  padding-top: 187px;
+  padding-bottom: 42px;
 
   font-size: 16px;
   line-height: 20px;
@@ -20,11 +15,15 @@
   background-color: @green;
 }
 
-.promo::before {
+.promo__text::before {
   content: "";
+  position: absolute;
+  top: 65px;
+  left: 50%;
 
-  width: 56px;
+  width: 60px;
   height: 60px;
+  margin-left: -27px;
 
   background-image: url(../../img/icon-gift.svg);
   background-repeat: no-repeat;
@@ -36,14 +35,23 @@
 
 @media (min-width: @tablet) {
   .promo {
-    flex-direction: row;
-    min-height: 200px;
+    padding-top: 72px;
+    padding-right: 100px;
+    padding-bottom: 68px;
+    padding-left: 423px;
+
+    text-align: left;
+
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .promo__text::before {
+    left: 118px;
   }
 }
 
 @media (min-width: @desktop) {
   .promo {
-    flex-direction: column;
     min-width: 245px;
   }
 }
