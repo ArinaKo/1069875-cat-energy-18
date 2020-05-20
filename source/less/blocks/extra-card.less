@@ -62,7 +62,7 @@
   }
 
   .extra-card__cost {
-    width: 45px;
+    width: 44px;
     text-align: right;
   }
 
@@ -74,11 +74,39 @@
 @media (min-width: @desktop) {
   .extra-card {
     flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 16px;
+
+    border-right: none;
+    border-left: none;
+  }
+
+  .extra-card__title {
+    margin: 0;
+    margin-right: auto;
+    padding-left: 1px;
   }
 
   .extra-card__desc {
     justify-content: space-between;
+    align-self: flex-end;
 
-    width: 284px;
+    width: 288px;
+    margin: 0;
+    margin-right: 37px;
+
+    line-height: 32px;
+  }
+
+  .extra-card__cost {
+    text-align: left;
+  }
+
+  .extra-card__button {
+    width: 245px;
   }
 }

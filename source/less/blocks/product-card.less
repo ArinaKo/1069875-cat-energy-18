@@ -63,7 +63,6 @@
 .product-card--all .product-card__title {
   margin-bottom: 8px;
   padding: 0;
-  padding-left: 1px;
 }
 
 .product-card__text {
@@ -85,7 +84,7 @@
     width: 324px;
     margin-top: 100px;
     margin-bottom: 40px;
-    padding: 0 37px;
+    padding: 0 38px;
     padding-top: 163px;
     padding-bottom: 40px;
 
@@ -137,12 +136,12 @@
 
   .product-card--all .product-card__title {
     margin-bottom: 25px;
-    padding: 0 40px;
+    padding: 0 35px;
   }
 
   .product-card__text {
     margin-bottom: auto;
-    padding: 0 40px;
+    padding: 0 35px;
 
     font-size: 16px;
     line-height: 19px;
@@ -152,5 +151,15 @@
 @media (min-width: @desktop) {
   .product-card {
     width: 245px;
+    margin-bottom: 43px;
+  }
+
+  .product-card__title {
+    padding: 0 15px;
+  }
+
+  .product-card--all .product-card__title,
+  .product-card__text {
+    padding: 0;
   }
 }

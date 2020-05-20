@@ -12,11 +12,6 @@
   line-height: 24px;
 }
 
-/* .extra__offers {
-  display: flex;
-  flex-direction: column;
- } */
-
 .extra__list {
   display: flex;
   flex-direction: column;
@@ -46,16 +41,22 @@
 
 @media (min-width: @desktop) {
   .extra {
-    .container-desktop();
-  }
+    position: relative;
 
-  .extra__offers {
-    flex-direction: row;
-    /* justify-content: space-between; */
+    .container-desktop();
+
+    margin-bottom: 85px;
   }
 
   .extra__headline {
+    padding: 0;
+
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .extra__list {
+    width: 895px;
+    margin: 0;
   }
 }

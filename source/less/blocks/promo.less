@@ -52,6 +52,20 @@
 
 @media (min-width: @desktop) {
   .promo {
-    min-width: 245px;
+    position: absolute;
+    top: 116px;
+    right: 30px;
+
+    width: 245px;
+    box-sizing: border-box;
+    padding: 0 40px;
+    padding-top: 187px;
+    padding-bottom: 42px;
+
+    text-align: center;
+  }
+
+  .promo__text::before {
+    left: 50%;
   }
 }
