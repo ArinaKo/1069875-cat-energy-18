@@ -1,29 +1,41 @@
 .profile {
   display: flex;
   flex-direction: column;
+
   .container-mobile();
+  margin-bottom: 32px;
+  padding: 0;
+  padding-top: 15px;
 }
 
 .profile__headline {
+  align-self: flex-start;
+
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0 20px;
+
   .headline;
   font-size: 36px;
   line-height: 60px;
-  align-self: flex-start;
 }
 
 .profile__intro {
-  .headline-up();
   align-self: flex-start;
-}
 
-.profile__form {
-  display: flex;
-  flex-direction: column;
+  .headline-up();
+  margin: 0;
+  margin-bottom: 39px;
+  padding-left:20px;
+  padding-right: 30px;
 }
 
 .profile__note {
-  line-height: 16px;
   align-self: center;
+
+  margin: 0;
+
+  line-height: 16px;
 }
 
 @media (min-width: @tablet) {
@@ -38,10 +50,6 @@
   .profile__intro {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .profile__button {
-    align-self: flex-start;
   }
 }
 
