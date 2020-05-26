@@ -1,5 +1,19 @@
+.social {
+  border-top: 1px solid @border-grey;
+  border-bottom: 1px solid @border-grey;
+}
+
 .social__list {
   .list-reset();
   display: flex;
   justify-content: space-between;
+
+  width: 140px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet) {
+  .social {
+    border: none;
+  }
 }
