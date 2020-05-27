@@ -28,30 +28,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.page-footer__copyright::after {
-content: "";
+  margin-right: -6px;
 
-width: 30px;
-height: 35px;
-
-background-color: @green;
+  color: @text-grey;
 }
 
 @media (min-width: @tablet) {
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
     .container-tablet();
-    padding-top: 56px;
+    padding-top: 44px;
+    padding-bottom: 45px;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    padding-top: 6px;
+    width: 164px;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    width: 170px;
   }
 }
 
 @media (min-width: @desktop) {
   .page-footer__wrapper {
     .container-desktop();
+  }
+
+  .page-footer__logo-img {
+    width: 128px;
   }
 }
